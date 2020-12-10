@@ -1,0 +1,87 @@
+.reservation {
+    padding-top: 60px;
+    height: 100%;
+}
+
+.reservation_banner1 {
+    margin-top: 80px;
+    height: 250px;
+    width: 70%;
+    background-color:var(--night_color);
+}
+
+.reservation_banner1 h1 {
+    position: relative;
+    top: 45%;
+    left: calc(10% + 50px);
+}
+
+.reservation_banner2 {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -400px;
+}
+
+.reservation_banner2 .content {
+    margin-top: -250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+}
+
+.reservation_banner2 .content form {
+    display: flex;
+}
+
+.reservation_banner2 .content form .reserve {
+    height: 35px;
+    width: 160px;
+    outline: none;
+    background-color: var(--night_color);
+    border: none;
+    margin-right: auto;
+    color: var(--night_text);
+    font-size: 18px;
+}
+
+.reservation_banner2 .content form button {
+    height: 35px;
+    width: 160px;
+    outline: none;
+    background-color: var(--night_color);
+    border: none;
+    color: var(--night_text);
+    font-size: 18px;
+}
+@media (max-width: 767px) {
+    .reservation_banner1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .reservation_banner1 h1 {
+        left: 10px;
+        top: 40%;
+    }
+
+    .reservation_banner2 .content {
+        margin-top: -250px;
+        width: 350px;
+    }
+    .reservation_banner2 .content form {
+        flex-direction: column;
+    }
+
+    .reservation_banner2 .content form .reserve,
+    .reservation_banner2 .content form button {
+        margin-right: 0px;
+        margin-bottom: 40px;
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,119 @@
+:root {
+    --night_color: #5d2906;
+    --night_bg: #222222;
+    --night_text: white;
+    --night_head: black;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 60px;
+    width: 100%;
+    background: transparent;
+}
+
+header#sticky {
+    background-color: var(--night_head);
+    transition: 1s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+  
+.burger {
+    display: none;
+}
+  
+.navbar .title {
+    text-decoration: none;
+    margin-top: 12px;
+    color: var(--night_text);
+    font-weight: 700;
+    font-size: 30px;
+    z-index: 100;
+}
+  
+.navbar ul {
+    position: relative;
+    margin-top: 22px;
+    /* right: 0; */
+    display: flex;
+    font-weight: 700;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+  
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--night_text);
+}
+
+
+.menuselection:hover {
+    color: var(--night_color);
+}
+@media (max-width: 767px) {
+    .navbar .menu {
+          display: none;
+    }
+    
+    .burger {
+        display: inline;
+        position: absolute;
+        top: -5px;
+        left: 0px;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 18px;
+        cursor: pointer;;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        padding: 0 40px;
+    }
+
+    .phonemenu {
+        position: absolute;
+        top: 47px;
+        left: -20px;
+        height: 100vh;
+        width: 100%;
+        background-color: var(--night_bg);
+        transition: 0.5s
+               
+    }
+
+    .phonemenu ul {
+        position: relative;
+        top: 25%;
+        left: -25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .phonemenu ul li {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+    .phonemenu ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--night_text);
+    }
+
+}

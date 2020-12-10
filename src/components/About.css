@@ -1,0 +1,213 @@
+.about {
+    padding-top: 60px;
+    height: 100%;
+}
+
+.about_banner1 {
+    margin-top: 80px;
+    height: 250px;
+    width: 70%;
+    background-color: var(--night_color);
+}
+
+.about_banner1 h1 {
+    position: relative;
+    top: 45%;
+    left: calc(10% + 50px);
+}
+
+.about_banner2 {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_banner2 .content img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.about_banner2 .content .text {
+    position: absolute;
+    left: calc(50% - 300px);
+    text-align: center;
+    top: calc(50% - 130px);
+    width: 600px;
+    line-height: 1.5;
+}
+.about_banner3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_banner3 .content {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about_banner3 .content img {
+    width: 340px;
+    margin-right: 80px;
+}
+
+.about_banner3 .content .text {
+    max-width: 400px;
+}
+
+.about_banner4 {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_contact {
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: -120px;
+}
+
+.about_banner4 .content {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about_banner4 .content .left {
+    margin-right: 80px;
+}
+
+.about_banner4 .content .left, .about_banner4 .content .right {
+    width: 320px;
+    margin-bottom: 100px;   
+}
+
+
+.emailsubmit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.emailsubmit .input {
+    height: 25px;
+}
+
+.emailsubmit .input,.emailsubmit .textarea {
+    margin-bottom: 20px;
+    resize: none;
+    border: none;
+    border-bottom: 2px #5d2906 solid;
+    border-right: 2px #5d2906 solid;
+    outline: none;
+    background-color: transparent;
+    color: var(--night_text);
+    font-size: 16px;
+}
+
+
+.emailsubmit .input:focus, .emailsubmit .textarea:focus {
+    background-color: var(--night_color);
+}
+.emailsubmit button {
+    width: 100%;
+    height: 40px;
+    background-color: var(--night_color);
+    border: none;
+    outline: none;
+    color: var(--night_text);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer {
+    margin-top: 200px;
+    background-color: var(--night_head);
+    height: 250px;
+    padding-top: 55px;
+    text-align: left;
+}
+
+.footer .content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .content h2 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .about_banner1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about_banner1 h1 {
+        left: 10px;
+        top: 40%;
+    }
+
+    .about_banner2 .content {
+        padding-top: 200px;
+    }    
+
+    .about_banner2 .content img {
+        height: 600px;
+    }
+
+    .about_banner2 .content .text {
+        margin-top: 80px;
+        left: calc(50% - 165px);
+        top: calc(50% - 200px);
+        width: 330px;
+    }
+
+    .about_banner3 .content {
+        width: 300px;
+        padding-top: 150px;
+    }
+
+    .about_banner4 .content {
+        position: relative;
+        justify-content: center;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    .about_banner4 .content .left {
+        margin-right: 0px;
+    }
+
+    .footer .content {
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        height: 100%;
+        padding-bottom: 40px;
+    }
+
+    .about_banner3 .content {
+        width: 600px;
+        flex-direction: column;
+    }
+
+    .about_banner3 .content img {
+        margin-right: 0px;
+    }
+}
